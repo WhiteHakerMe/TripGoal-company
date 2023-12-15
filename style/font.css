@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Roboto-R;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-M;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family:Roboto-B;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family:Roboto-BK;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Alkatra-R;
+    src: url(../fonts/Alkatra-Regular.ttf);
+}
+@font-face {
+    font-family:Alkatra-M;
+    src: url(../fonts/Alkatra-Medium.ttf);
+}
+@font-face {
+    font-family:Alkatra-SB;
+    src: url(../fonts/Alkatra-Bold.ttf);
+}
+@font-face {
+    font-family: Alkatra-;
+    src: url(../fonts/Alkatra-SemiBold.ttf);
+}

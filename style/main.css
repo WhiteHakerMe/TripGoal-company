@@ -1,0 +1,68 @@
+@import url(./font.css);
+:root {
+    --primary:#3685FB;
+    --title-clr:#002248;
+    --text-clr:#697687;
+    --light:#fff;
+    --gray:#f8f8f8;
+    --nurmal:1rem;
+    --md:1.25rem;
+    --lg:2rem;
+    --xl:2.625rem;
+    --xxl:3.75rem;
+    --transition:0.4s;
+    /* root fonts Roboto */
+    --RR:"Roboto-R";
+    --RM:"Roboto-M";
+    --RB:"Roboto-B";
+    --RBK:"Roboto-BK";
+    /* root fonts Alkatra */
+    --AL-R:"Alkatra-R";
+    --AL-M:"Alkatra-M";
+    --AL-SB:"Alkatra-SB";
+    --AL-B:"Alkatra-B";
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1210px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100vh;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+.header-nav_link {
+    color: var(--title-clr);
+    font-family: var(--RR) sans-serif;
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: var(--lg);
+}
+.register-btn {
+    width: 120px;
+    height: 50px;
+    padding: 16px 28px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    border: transparent;
+
+    color: var(--light);
+    
+}
+/* header banner */
