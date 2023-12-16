@@ -41,6 +41,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.header {
+    padding: 27px;
+}
 .header-nav {
     display: flex;
     align-items: center;
@@ -49,10 +52,15 @@
 }
 .header-nav_link {
     color: var(--title-clr);
-    font-family: var(--RR) sans-serif;
+    font-family: var(--RR);
     font-size: var(--md);
     font-weight: 400;
     line-height: var(--lg);
+    transition: var(--transition);
+}
+.header-nav_link:hover {
+    transform: scale(1.1);
+    
 }
 .register-btn {
     width: 120px;
@@ -64,5 +72,57 @@
 
     color: var(--light);
     
+}
+.register-btn:hover {
+    animation-name: btn;
+    animation-duration: 0.7s;
+    cursor: pointer;
+}
+@keyframes btn {
+    from {
+        background-color: var(--primary);
+    }
+    to {
+        background: scroll #3685fba5;
+    }
+}
+
+.burger-menu {
+    width: 60px;
+    height: 50px;
+    border: 2px solid #002248;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+.burger-menu span {
+    position: absolute;
+    left: 5px;
+    top: 1vh;
+    width: 80%;
+    height: 4px;
+    background-color: #002248;
+}
+.burger-menu span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 1.8vh;
+    width: 100%;
+    height: 4px;
+    background-color: #002248;
+}
+
+.burger-menu span::before{
+    content: "";
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 3.6vh;
+    width: 100%;
+    height: 4px;
+    background-color: #002248;
 }
 /* header banner */
