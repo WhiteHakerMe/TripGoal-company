@@ -5,7 +5,12 @@
         width: 100%;
     }
 }
-
+@media (max-width:1920px) {
+    .container {
+        max-width: 1440px;
+        width: 100%;
+    }
+}
 @media (max-width:1024px) {
     .header-nav_link {
         font-size: var(--nurmal);
@@ -29,6 +34,7 @@
         width: 120px;
         overflow: hidden;
     }
+    
 }
 
 @media (max-width:425px) {

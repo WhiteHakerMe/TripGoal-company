@@ -1,20 +1,21 @@
-gsap.registerPlugin(ScrollTrigger);
 gsap.from(".header-nav", {
-    y:-100,
-    skewY:-10,
-    duration:1
+    y: -100,
+    skewY: -10,
+    duration: 1
 });
 
-gsap.from('.banner-img-box', {
-    // y:-100,
-    // duration:1,
-    scale:10,
-    ease:"ease",
-    ScrollTrigger: {
-        trigger:'.img1',
-        scrub:1,
-        start: "top top",
-        end:"bottom",
-        pin:true
-    }
-})
+gsap.registerPlugin(ScrollTrigger);
+
+// Animatsiya boshlanishi
+gsap.from("#section1 .img1", {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#section1",  // O'qim sug'uruvchi element
+        start: "top",      // O'qim boshlangan joy
+        end: "bottom",
+        y: -50,   // O'qim tugagan joy
+        scrub: 1,
+    },
+});

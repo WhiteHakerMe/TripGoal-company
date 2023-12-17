@@ -16,17 +16,17 @@
 }
 @font-face {
     font-family: Alkatra-R;
-    src: url(../fonts/Alkatra-Regular.ttf);
+    src: url(../fonts/AirbnbCereal_W_XBd.otf);
 }
 @font-face {
     font-family:Alkatra-M;
-    src: url(../fonts/Alkatra-Medium.ttf);
+    src: url(../fonts/AirbnbCereal_W_Md.otf);
 }
 @font-face {
     font-family:Alkatra-SB;
-    src: url(../fonts/Alkatra-Bold.ttf);
+    src: url(../fonts/AirbnbCereal_W_Bd.otf);
 }
-@font-face {
+/* @font-face {
     font-family: Alkatra-;
     src: url(../fonts/Alkatra-SemiBold.ttf);
-}
+} */

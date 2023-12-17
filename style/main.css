@@ -1,5 +1,5 @@
 @import url(./font.css);
-
+@import url('https://fonts.cdnfonts.com/css/eksell-display-trial');
 :root {
     --primary: #3685FB;
     --title-clr: #002248;
@@ -266,14 +266,89 @@ select {
     background: transparent;
     margin-right: 102px;
     padding-right: 5px;
-    color: var(--Blue-Dark, #002248);
-    font-family: Roboto;
+    color: var(--title-clr);
+    font-family: var(--RM);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
     /* 100% */
 }
+
 .book-btn {
-    transform: translateX(9rem);
+    width: 210px;
+    height: 143.84px;
+    transform: translateX(10rem);
+    border: transparent;
+    border-radius: 0px 30px 30px 0px;
+    background: #3685FB;
+    box-shadow: 8px 20px 39px 10px rgba(0, 0, 0, 0.04);
+}
+
+.book-btn:hover {
+    animation-name: btn;
+    animation-duration: 0.7s;
+    cursor: pointer;
+}
+
+.btn-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.btn-info_subtitle {
+    color: var(--light);
+    font-size: var(--nurmal);
+    font-family: var(--RB);
+}
+
+.select_subtitle {
+    color: #697687;
+    font-family: var(--AL-M);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 100% */
+}
+.select-box, .select-box2, .select-box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+/* section2 find */
+.find {
+    padding-block: 20rem;
+}
+.find-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+.find-info_subtitle {
+    color: var(--blue-light);
+    font-size: var(--nurmal);
+    font-family: var(--AL-M);
+    text-align: center;
+    font-weight: 500;
+}
+.find-info_title {
+    color: var(--title-clr);
+    font-size: var(--xl);
+    font-family:  Eksell Display;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.find-info_text {
+    width: 568px;
+    color: var(--text-clr);
+    text-align: center;
+    font-family: var(--AL-M);
+    font-weight: 400;
+
 }
