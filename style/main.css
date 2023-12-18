@@ -36,8 +36,12 @@
 body {
     width: 100%;
     background: var(--gray);
-}
+    overflow-x: hidden;
 
+}
+body::-webkit-scrollbar {
+    background-attachment: fixed;
+}
 .container {
     max-width: 1210px;
     width: 100%;
@@ -296,6 +300,7 @@ select {
     flex-direction: column;
     justify-content: center;
     row-gap: 15px;
+    
 }
 
 .btn-info_subtitle {
@@ -329,6 +334,9 @@ select {
     justify-content: center;
     align-items: center;
     row-gap: 15px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 1s;
 }
 .find-info_subtitle {
     color: var(--blue-light);
@@ -350,5 +358,4 @@ select {
     text-align: center;
     font-family: var(--AL-M);
     font-weight: 400;
-
 }

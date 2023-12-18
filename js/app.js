@@ -7,15 +7,26 @@ gsap.from(".header-nav", {
 gsap.registerPlugin(ScrollTrigger);
 
 // Animatsiya boshlanishi
-gsap.from("#section1 .img1", {
+gsap.from("#section1", {
     opacity: 0,
-    y: -50,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#section1",  // O'qim sug'uruvchi element
-        start: "top",      // O'qim boshlangan joy
-        end: "bottom",
-        y: -50,   // O'qim tugagan joy
-        scrub: 1,
-    },
+    x: -500,
+    duration: 2
+    
 });
+gsap.from('.banner-info', {
+    opacity:0,
+    x:500,
+    duration:2,
+});
+
+const elment = document.querySelectorAll('.find-info');
+
+window.addEventListener('scroll', () => {
+    if (scrollY > elment.offsetTop - elment.clientHeight / 2) {
+        elment.forEach((el) => {
+            el.style.transform = `translateX(0)`
+            el.style.opacity = `1`
+        })
+    }
+})
+
