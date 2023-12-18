@@ -19,11 +19,12 @@ gsap.from('.banner-info', {
     duration:2,
 });
 
-const elment = document.querySelectorAll('.find-info');
+const elment = document.querySelector('.find');
+const elment2 = document.querySelectorAll('find-info')
 
 window.addEventListener('scroll', () => {
     if (scrollY > elment.offsetTop - elment.clientHeight / 2) {
-        elment.forEach((el) => {
+        elment2.forEach((el) => {
             el.style.transform = `translateX(0)`
             el.style.opacity = `1`
         })
