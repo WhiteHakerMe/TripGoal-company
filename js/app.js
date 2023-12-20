@@ -25,7 +25,7 @@ const elment2 = document.querySelectorAll('find-info')
 window.addEventListener('scroll', () => {
     if (scrollY > elment.offsetTop - elment.clientHeight / 2) {
         elment2.forEach((el) => {
-            el.style.transform = `translateX(0)`
+            el.style.transform = `translateY(0)`
             el.style.opacity = `1`
         })
     }
