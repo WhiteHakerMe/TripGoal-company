@@ -320,15 +320,13 @@ select {
 .find {
     padding-block: 20rem;
 }
-.find-info {
+.find-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 15px;
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: 1s;
+    
 }
 .find-info_subtitle {
     color: var(--blue-light);
