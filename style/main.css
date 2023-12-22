@@ -1,11 +1,12 @@
 @import url(./font.css);
 @import url('https://fonts.cdnfonts.com/css/eksell-display-trial');
+
 :root {
     --primary: #3685FB;
     --title-clr: #002248;
     --text-clr: #697687;
     --light: #fff;
-    --blue-dark:#002248;
+    --blue-dark: #002248;
     --gray: #f8f8f8;
     --blue-light: #00B3A0;
     --nurmal: 1rem;
@@ -40,9 +41,11 @@ body {
     overflow-x: hidden;
 
 }
+
 body::-webkit-scrollbar {
     background-attachment: fixed;
 }
+
 .container {
     max-width: 1210px;
     width: 100%;
@@ -292,7 +295,7 @@ select {
     flex-direction: column;
     justify-content: center;
     row-gap: 15px;
-    
+
 }
 
 .btn-info_subtitle {
@@ -310,24 +313,30 @@ select {
     line-height: 16px;
     /* 100% */
 }
-.select-box, .select-box2, .select-box3 {
+
+.select-box,
+.select-box2,
+.select-box3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
 }
+
 /* section2 find */
 .find {
     padding-block: 20rem;
 }
-.find-info{
+
+.find-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 15px;
-    
+
 }
+
 .find-info_subtitle {
     color: var(--blue-light);
     font-size: var(--nurmal);
@@ -335,17 +344,71 @@ select {
     text-align: center;
     font-weight: 500;
 }
+
 .find-info_title {
     color: var(--title-clr);
     font-size: var(--xl);
-    font-family:  Eksell Display;
+    font-family: Eksell Display;
     font-weight: 700;
     text-transform: capitalize;
 }
+
 .find-info_text {
     width: 568px;
     color: var(--text-clr);
     text-align: center;
     font-family: var(--AL-M);
     font-weight: 400;
+}
+
+.find-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 33px;
+}
+
+.find-ms-box {
+    max-width: 370px;
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    border-radius: 10px;
+    border: 2px solid #F8F8F8;
+    background: #FFF;
+    margin-top: 70px;
+    transition: 0.5s;
+}
+.find-ms-box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 18px 1px #d8d8d8;
+    
+}
+
+.ms-img {
+    text-align: center;
+}
+.find-ms-info {
+    text-align: center;
+}
+.find-ms-info_title {
+    margin-top: 30px;
+    width: 254px;
+    color: var(--title-clr);
+    font-family: var(--AL-M);
+    line-height: 25px;
+    font-size: var(--md);
+} 
+.find-ms-info_text {
+    margin-top: 20px;
+    width: 236px;
+    color: var(--text-clr);
+    font-size: var(--nurmal);
+    font-family: var(--RR);
+    line-height: 28px;
 }

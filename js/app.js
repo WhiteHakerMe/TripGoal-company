@@ -1,3 +1,5 @@
+// const { default: gsap } = require("gsap");
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.from(".i",{
     y: -50,
@@ -17,7 +19,35 @@ gsap.from(".header-nav", {
     duration: 1
 });
 
+gsap.from('#right', {
+    x:200,
+    opacity:0,
+    duration:1,
+    scrollTrigger: {
+        trigger:"#right",
+        toggleActions: "restart none none reset "
+    }
+});
 
+gsap.from('#center', {
+    y:300,
+    opacity:0,
+    duration:1,
+    scrollTrigger: {
+        trigger:"#center",
+        toggleActions: "restart none none  reset "
+    }
+}),
+
+gsap.from('#left', {
+    x:-200,
+    opacity:0,
+    duration:1,
+    scrollTrigger: {
+        trigger:"#left",
+        toggleActions: "restart none none  reset "
+    }
+});
 
 // Animatsiya boshlanishi
 gsap.from("#section1", {
