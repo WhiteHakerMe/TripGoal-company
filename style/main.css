@@ -326,6 +326,9 @@ select {
 /* section2 find */
 .find {
     padding-block: 20rem;
+    width: 100%;
+    height: 150vh;
+    background: #FFF;
 }
 
 .find-info {
@@ -383,19 +386,22 @@ select {
     margin-top: 70px;
     transition: 0.5s;
 }
-.find-ms-box:hover{
+
+.find-ms-box:hover {
     transform: scale(1.1);
     cursor: pointer;
     box-shadow: 0 0 18px 1px #d8d8d8;
-    
+
 }
 
 .ms-img {
     text-align: center;
 }
+
 .find-ms-info {
     text-align: center;
 }
+
 .find-ms-info_title {
     margin-top: 30px;
     width: 254px;
@@ -403,7 +409,8 @@ select {
     font-family: var(--AL-M);
     line-height: 25px;
     font-size: var(--md);
-} 
+}
+
 .find-ms-info_text {
     margin-top: 20px;
     width: 236px;
@@ -411,4 +418,83 @@ select {
     font-size: var(--nurmal);
     font-family: var(--RR);
     line-height: 28px;
+}
+
+/* start Location section */
+
+.location {
+    width: 100%;
+    height: 100vh;
+    background: var(--gray);
+    padding-block: 10rem;
+}
+
+.location-top-info {
+    display: block;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.top-info_subtitle {
+    color: var(--blue-light);
+    font-family: var(--RM);
+    font-size: var(--nurmal);
+    line-height: 18px;
+}
+
+.top-info_title {
+    color: var(--title-clr);
+    font-family: var(--AL-M);
+    text-transform: capitalize;
+    font-size: var(--xl);
+    padding-top: 10.5px;
+}
+
+.top-info_text {
+    width: 538px;
+    color: var(--text-clr);
+    font-size: var(--nurmal);
+    font-family: var(--RR);
+    line-height: 28px;
+    padding-top: 19.92px;
+}
+
+.slide-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.slide-box {
+    max-width: 370px;
+    border-radius: 10px;
+    border: 6px solid #FFF;
+    background: var(--blue-dark);
+    overflow: hidden;
+    position: relative;
+}
+#sbi{
+    height: 499px;
+    object-fit: cover;
+}
+
+.slide-box-info {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 310px;
+    border-radius: 10px;
+    border: 1px solid #989898;
+    background: rgba(0, 34, 72, 0.30);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    /* flex-wrap: wrap; */
+    padding: 30px 29px;
+    overflow: hidden;
+    height: 100px;
+
 }
