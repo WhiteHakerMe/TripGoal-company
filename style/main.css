@@ -468,15 +468,18 @@ select {
 
 .slide-box {
     max-width: 370px;
+    height: 500px;
     border-radius: 10px;
     border: 6px solid #FFF;
     background: var(--blue-dark);
     overflow: hidden;
     position: relative;
 }
-#sbi{
-    height: 499px;
-    object-fit: cover;
+
+#sbi {
+    height: 500px;
+    /* object-fit: cover; */
+    /* margin-top: 10px; */
 }
 
 .slide-box-info {
@@ -491,10 +494,34 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 25px;
     /* flex-wrap: wrap; */
-    padding: 30px 29px;
+
     overflow: hidden;
     height: 100px;
 
+}
+
+.slide-info_title {
+    color: #FFF;
+    width: 100%;
+    font-family: var(--RM);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 10px;
+    /* 100% */
+}
+
+.slide-info_subtitle {
+    color: #FFF;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Airbnb Cereal App;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    /* 100% */
 }
