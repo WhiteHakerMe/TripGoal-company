@@ -522,6 +522,27 @@ select {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px; /* 175% */
+    line-height: 28px;
+    /* 175% */
     /* 100% */
+}
+
+.slide-info_prices {
+    color: var(--light);
+    font-size: var(--nurmal);
+    font-family: var(--RR);
+    margin-top: 10px; 
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.center-slide-catalog {
+    position: relative;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+.slide-btn-groups {
+    position: absolute;
+    top: 0;
+    right: 10%;
 }
