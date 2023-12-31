@@ -459,90 +459,23 @@ select {
     padding-top: 19.92px;
 }
 
-.slide-lists {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 18px;
-}
-
-.slide-box {
-    max-width: 370px;
-    height: 500px;
-    border-radius: 10px;
-    border: 6px solid #FFF;
-    background: var(--blue-dark);
-    overflow: hidden;
-    position: relative;
-}
-
-#sbi {
-    height: 500px;
-    /* object-fit: cover; */
-    /* margin-top: 10px; */
-}
-
-.slide-box-info {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    width: 310px;
-    border-radius: 10px;
-    border: 1px solid #989898;
-    background: rgba(0, 34, 72, 0.30);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 25px;
-    /* flex-wrap: wrap; */
-
-    overflow: hidden;
-    height: 100px;
-
-}
-
-.slide-info_title {
-    color: #FFF;
+.swiper {
     width: 100%;
-    font-family: var(--RM);
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    margin-left: 10px;
-    /* 100% */
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slide-info_subtitle {
-    color: #FFF;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-family: Airbnb Cereal App;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-    /* 175% */
-    /* 100% */
-}
-
-.slide-info_prices {
-    color: var(--light);
-    font-size: var(--nurmal);
-    font-family: var(--RR);
-    margin-top: 10px; 
-    font-weight: 500;
-    line-height: 24px;
-}
-
-.center-slide-catalog {
-    position: relative;
-    padding-top: 10rem;
-    overflow: hidden;
-}
-.slide-btn-groups {
-    position: absolute;
-    top: 0;
-    right: 10%;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
